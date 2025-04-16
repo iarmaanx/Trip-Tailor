@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Recommendation</title>
+  <link rel="stylesheet" href="Recommendation.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../Frontend/styles.css">
+</head>
+<body>
+
+ <!-- Navbar -->
+<nav class="navbar">
+  <div class="navbar-logo">
+      <a href="/index.html"><img src="/Images/logo-white.png" style="height:70px;width:112.4px;padding-top:2px;" alt="Logo"></a>
+  </div>
+  <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+  </div>
+  <ul class="navbar-links flex items-center space-x-3">
+      <li>
+        <a href="/FamousPlaces.html" class="navbar-link text-base font-medium text-grey-400 hover:text-blue-500">
+          Famous Places
+        </a>
+      </li>
+    
+      <li>
+        <a href="https://github.com/iarmaanx/Trip-Tailor" target="_blank" class="navbar-link flex items-center gap-2 text-base font-medium text-grey-400 hover:text-blue-500">
+          <i class="fab fa-github text-xl"></i>
+          <span>GitHub</span>
+        </a>
+      </li>
+    </ul>
+    
+</nav>
+
+  <section id="recommendation" class="recommendation-section">
+    <h1>Travel Recommendation</h1>
+    <p>Fill out the form below to get personalized travel recommendations based on your preferences.</p>
+    
+    <!-- Travel Recommendation Form -->
+    <div class="form-container">
+      <form id="travel-form">
+        <input type="text" id="current-location" name="location" placeholder="Enter your current location" required>
+        <input type="number" id="budget" name="budget" placeholder="Your Budget (in INR)" required>
+        <input type="number" id="days" name="days" placeholder="Number of days" required>
+        <textarea id="preferences" name="preferences" placeholder="Enter your preferences (e.g. beaches, mountains)" required></textarea>
+        <button type="submit">Get Recommendation</button>
+      </form>
+    </div>
+
+    <!-- Display Recommendations -->
+    <div id="recommendation-result" class="result-container">
+      <h2>Your Personalized Travel Plan</h2>
+      <div id="recommendation-card" class="recommendation-card">
+        <div class="card-header">
+          <i class="fas fa-map-marked-alt"></i>
+          <h3>Destination Recommendation</h3>
+        </div>
+        <p id="recommendation-text"></p>
+        <button id="explore-btn">Explore More</button>
+      </div>
+    </div>
+    
+
+    <!-- Social Links -->
+   
+  </section>
+
+
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-6">
+  <div class="container mx-auto text-center">
+      <p class="text-lg">Made with ❤️ by <a href="https://mytoplinks.netlify.app/" target="_blank" class="text-blue-400 hover:underline">Armaan</a></p>
+  </div>
+</footer>
+
+  <script src="/Frontend/Recommendation.js"></script>
+</body>
+</html>
