@@ -1,4 +1,4 @@
-API_KEY ='AIzaSyAz4m6Y_zQ5DF3BnjasyUu3YN7TaY4oiMw'
+API_KEY =''
  // This should be set in your environment variables
 
 // Add debug log to check if script is loaded
